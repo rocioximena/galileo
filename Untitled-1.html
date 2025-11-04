@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E.E.S.T N° 5 - General San Martín</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            background-color: #0057b7;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .about, .contact {
+            background-color: #ffffff;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .about h2, .contact h2 {
+            color: #003366;
+        }
+
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .address {
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        function verificarEdad () {
+            let edad =prompt("cuantos años tenes?");
+            if (edad >=18) {
+                document.getElementById("resultado").innerText="Bienvenido";
+            } else {
+                document.getElementById("resultado").innerText="Denegado";
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="verificarEdad ()">Ingresar</button>
+    <p id="resultado"></p>
+    <header>
+        <h1>Escuela de Educación Secundaria Técnica N° 5</h1>
+        <p>Educación de calidad en el Partido de General San Martín</p>
+    </header>
+
+    <nav>
+        <a href="#about">Nosotros</a>
+        <a href="#contact">Contacto</a>
+        <a href="#services">Servicios</a>
+    </nav>
+
+    <div class="container">
+        <section class="intro">
+            <h2>Bienvenidos a la E.E.S.T N° 5</h2>
+            <p>En nuestra escuela formamos profesionales capacitados para enfrentar los desafíos del mundo laboral. Con una sólida formación técnica, nuestros estudiantes están preparados para desarrollarse en diversos campos de la industria.</p>
+        </section>
+
+        <section class="about" id="about">
+            <h2>Sobre Nosotros</h2>
+            <p>La E.E.S.T N° 5 está ubicada en la localidad de Eva Perón, Partido de General San Martín, Buenos Aires. Desde nuestra fundación, hemos trabajado para ofrecer una educación técnica de calidad, con un enfoque práctico y actualizado que prepara a los estudiantes para un futuro exitoso.</p>
+            <p>Nuestros egresados se destacan en diversas áreas como electrónica, mecánica, informática, entre otras, gracias a los conocimientos adquiridos durante su formación.</p>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Contacto</h2>
+            <p>Para más información, dudas o consultas, no dudes en comunicarte con nosotros a través de los siguientes medios:</p>
+            <div class="address">
+                <p><strong>Dirección:</strong> Eva Perón, Partido de General San Martín, Buenos Aires, Argentina</p>
+                <p><strong>Teléfono:</strong> (011) 1234-5678</p>
+                <p><strong>Email:</strong> contacto@eest5.edu.ar</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 E.E.S.T N° 5 - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
+
